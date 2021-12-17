@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARVEL | Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="styles/estilos.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Marverl Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a id="botonVerInfoCarrito" class="nav-link active position-relative">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <span id="pildora" class="invisible position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger">
+                  99+
+                </span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="animate__animated animate__fadeIn animate__slower">
+      <img src="img/capamerica1.jpg" alt="" class="img-fluid w-100 mt-5">
+    </section>
+
+    <section class="animate__animated animate__fadeInUp wow mt-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <img src="img/ironman.png" alt="" class="w-100 img-fluid">
+          </div>
+          <div class="col-12 col-md-7 align-self-center">
+            <h4>MARVEL</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur alias et, quo quos hic temporibus tempore qui eius atque odio vero reprehenderit accusantium ad asperiores enim amet placeat cupiditate ab sunt corporis magnam veniam. Quaerat ab voluptas facilis iste suscipit cupiditate et ex necessitatibus ipsum dicta, ut itaque mollitia voluptatibus. Dolor, nemo. In neque maiores omnis ab dolorem ullam dolor temporibus cum modi consequuntur doloribus aperiam, repellat doloremque exercitationem voluptate eveniet fuga numquam et nisi unde pariatur? Esse voluptate recusandae repellendus cupiditate voluptatum reprehenderit fugit nisi quibusdam totam? Facere voluptatem voluptas excepturi illo sint explicabo corporis exercitationem quae rem minima blanditiis possimus rerum aperiam, laboriosam asperiores non, officia iure nesciunt ipsam quas. Autem numquam dignissimos tempore esse minus beatae vitae deleniti ab quis maiores veniam, magni cupiditate commodi, quidem iste non unde itaque molestias fuga eum? Suscipit ratione quis, fuga doloribus veritatis ab molestiae consequuntur aliquam iure eaque rerum? Quia odit vel quis perferendis dignissimos mollitia aut officiis praesentium accusamus repellat architecto vero iste dicta excepturi dolorem, commodi cumque. Aperiam voluptatem tempora esse cumque quibusdam assumenda perferendis architecto est quidem fugiat repellat sapiente, minus optio praesentium quasi quos amet corporis. Et corporis modi deleniti beatae odit dolor quidem? Debitis, aliquam!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fondobanner">
+
+    </section>
+
+    <section class="mt-5 mb-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-5 g-4"" id="fila">
+          <!-- Lo de adentro de la fila se va a cargar desde js  -->
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section>
+    <!-- Modal -->
+    <div class="modal fade" id="infoProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Detalles del producto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-5">
+                  <img src="" alt="" id="fotoProducto" class="img-fluid w-100">
+                </div>
+                <div class="col-12 col-md-7">
+                  <h4 id="nombreProducto"></h4>
+                  <h4 id="precioProducto"></h4>
+                  <div class="input-group mb-3">
+                    <input id="cantidadProducto" type="number" class="form-control" placeholder="Cantidad" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button id="botonAgregarCarrito" type="button" class="btn btn-primary">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <!-- Modal -->
+<div class="modal fade" id="infoCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div id="filaInfoCarrito" class="row">
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Comprar Productos</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <script src="js/llenadotienda.js"></script>
+
+  <script src="https://kit.fontawesome.com/3675f85246.js" crossorigin="anonymous"></script>
+
+  <script src="js/controladorTienda.js" type="module"></script>
+
+</body>
+
+</html>

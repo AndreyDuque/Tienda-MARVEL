@@ -1,0 +1,6 @@
+.fondobanner{
+    background-image: url("../img/avengers.gif");
+    background-position: center top;
+    background-attachment: fixed;
+    height: 600px;
+}
