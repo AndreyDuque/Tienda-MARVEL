@@ -4,3 +4,8 @@
     background-attachment: fixed;
     height: 600px;
 }
+
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
