@@ -154,7 +154,7 @@ productos.forEach(function(producto){
    let botonInfoProducto = document.createElement("button")
    botonInfoProducto.setAttribute("type", "button")
    botonInfoProducto.classList.add("btn")
-   botonInfoProducto.classList.add("btn-warning")
+   botonInfoProducto.classList.add("btn-dark")
    botonInfoProducto.classList.add("w-100")
    botonInfoProducto.classList.add("shadow")
    botonInfoProducto.textContent = "Ver producto"

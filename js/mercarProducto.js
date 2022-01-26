@@ -3,7 +3,7 @@ export function mercarProducto(event){
 
     let producto = {}
 
-    if(event.target.classList.contains("btn-warning")){
+    if(event.target.classList.contains("btn-dark")){
         let datosProducto = event.target.parentElement.parentElement
         // console.log(datosProducto.querySelector('img').src)
 

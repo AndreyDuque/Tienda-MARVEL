@@ -19,7 +19,7 @@ let botonInfoCarrito = document.getElementById("botonVerInfoCarrito")
 // Escucho cuando hagan clic en la fila de los productos
 filaproductos.addEventListener("click", function (event) {
 
-    if (event.target.classList.contains("btn-warning")) {
+    if (event.target.classList.contains("btn-dark")) {
 
         producto = mercarProducto(event)
         // console.log(producto)
